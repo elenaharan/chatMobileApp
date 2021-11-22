@@ -32,25 +32,37 @@ export default class Start extends React.Component {
           <View style={styles.colorPickerContainer}>
             <Text style={styles.chooseColor}>Pick the color of your chat room</Text>
             <View style={styles.colorPicker}>
-              {/*Lets you choose mist color*/}
-              <TouchableOpacity style={[styles.colors, styles.mist]}
-                onPress={() => this.setState({chatRoomColor: "#90AFC5"})}>
+              {/*Lets you choose black*/}
+              <TouchableOpacity 
+              accessible={true}
+              accessibilityLabel="Black background color"
+              accessibilityHint="Lets you choose black background color for your chat room"
+              style={[styles.colors, styles.black]}
+                onPress={() => this.setState({chatRoomColor: "#090C08"})}>
               </TouchableOpacity>
-              {/*Lets you choose seafoam color*/}
-              <TouchableOpacity style={[styles.colors, styles.seafoam]}
-                onPress={() => this.setState({chatRoomColor: "#C4DFE6"})}>
+              {/*Lets you choose dark grey color*/}
+              <TouchableOpacity 
+              accessible={true}
+              accessibilityLabel="Dark grey background color"
+              accessibilityHint="Lets you choose dark grey background color for your chat room"
+              style={[styles.colors, styles.darkGrey]}
+                onPress={() => this.setState({chatRoomColor: "#474056"})}>
               </TouchableOpacity>
-              {/*Lets you choose aquamarine color*/}
-              <TouchableOpacity style={[styles.colors, styles.aquamarine]}
-                onPress={() => this.setState({chatRoomColor: "#98DBC6"})}>
+              {/*Lets you choose light grey color*/}
+              <TouchableOpacity 
+              accessible={true}
+              accessibilityLabel="Light grey background color"
+              accessibilityHint="Lets you choose light grey background color for your chat room"
+              style={[styles.colors, styles.lightGrey]}
+                onPress={() => this.setState({chatRoomColor: "#8A95A5"})}>
               </TouchableOpacity>
-              {/*Lets you choose pinkTulip color*/}
-              <TouchableOpacity style={[styles.colors, styles.pinkTulip]}
-                onPress={() => this.setState({chatRoomColor: "#F18D9E"})}>
-              </TouchableOpacity>
-              {/*Lets you choose ice color*/}
-              <TouchableOpacity style={[styles.colors, styles.ice]}
-                onPress={() => this.setState({chatRoomColor: "#A1D6E2"})}>
+              {/*Lets you choose green color*/}
+              <TouchableOpacity 
+              accessible={true}
+              accessibilityLabel="Green background color"
+              accessibilityHint="Lets you choose green background color for your chat room"
+              style={[styles.colors, styles.green]}
+                onPress={() => this.setState({chatRoomColor: "#B9C6AE"})}>
               </TouchableOpacity>
             </View>
           </View>
@@ -119,6 +131,7 @@ const styles = StyleSheet.create({
   colorPicker: {
     flexDirection: "row",
     marginTop: 10,
+    justifyContent: "center",
   },
   colors: {
     width: 45,
@@ -128,19 +141,16 @@ const styles = StyleSheet.create({
     borderRadius: 45 / 2,
     borderColor: "#fff",
   },
-  mist: {
-    backgroundColor: "#90AFC5",
+  black: {
+    backgroundColor: "#090C08",
   },
-  seafoam: {
-    backgroundColor: "#C4DFE6",
+  darkGrey: {
+    backgroundColor: "#474056",
   },
-  aquamarine: {
-    backgroundColor: "#98DBC6",
+  lightGrey: {
+    backgroundColor: "#8A95A5",
   },
-  pinkTulip: {
-    backgroundColor: "#F18D9E",
-  },
-  ice: {
-    backgroundColor: "#A1D6E2",
+  green: {
+    backgroundColor: "#B9C6AE",
   },
 })
