@@ -1,6 +1,12 @@
 # chatMobileApp General Information
 
 This is a mobile chat app for mobile devices built with React Native. This app will provide users with a chat interface and options to share images and their location.
+<div align="center">
+  <p float="left">
+    <img src="./assets/images/startScreen.PNG" alt="image of the start screen" width="300">
+    <img src="./assets/images/chatScreen.PNG" alt="image of the chat screen" width="300">
+  </p>
+</div>
 
 ## Technologies
 This app is built using React Native, Expo and Google Firestore Database. It is optimized for both Android and iOS devices. Expo was used to develop the app and Google Firestor to store chat messages.
