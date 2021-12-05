@@ -42,10 +42,10 @@ You will need to install the following dependencies in order to run the project:
 
 ## Set up
 CLI tool called Expo was used to run, develop and test this React Native project. Before installing expo-cli, make sure that you have the latest LTS Node version installed or upgrade it to the latest one if needed. To create a new project and start running Expo, yo'll need to install Expo CLI. To do so, open up your terminal and type in: <br>
-<i>npm install expo-cli --global<i> <br>
+<i>npm install expo-cli --global</i> <br>
 Next, you'll need the Expo app installed on your phone to run the project.<br>
 Create a new project by entering: <br>
-<i>expo init hello-world<i><br>
+<i>expo init hello-world</i><br>
 
 ## Running the app
 To run the app, use "expo start" or "npm start" in your termial.
